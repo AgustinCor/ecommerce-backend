@@ -7,7 +7,9 @@ class ProductServices{
   static async getAll(){
     try{
      const result =await product.findAll({
-      where: {availableQty: { [Op.gt]: 0}},
+      where: {
+        availableQty: { [Op.gt]: 0}
+      },
         include:{
            attributes:['username'],
            models:user,

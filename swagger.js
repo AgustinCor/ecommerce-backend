@@ -5,10 +5,12 @@ require("dotenv").config();
 const options = {
     apis:["./src/routes/auth.routes.js",
           "./src/models/user.js",
+
           "./src/routes/productInCart.routes.js",
           "./src/models/productIncart.js",
            
            "./src/routes/cart.routes.js",
+           "/src/routes/product.routes.js"
         ],
     definition: {
       openapi: "3.0.0",
