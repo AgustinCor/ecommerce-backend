@@ -17,7 +17,7 @@ const router =Router()
  *           type: integer
  *     responses:
  *       201:
- *         description: Products in cart getted
+ *         description: get products in cart
  *         content:
  *           application/json:
  *             schema:
@@ -25,7 +25,7 @@ const router =Router()
  *             properties:
  *               message:
  *                 type: string
- *                 example: produdcts in cart getted
+ *                 example: produdcts in cart obtained
  */
 
 router.get("/:id/cart",cartProducts);

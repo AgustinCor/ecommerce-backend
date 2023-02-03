@@ -10,11 +10,11 @@ class ProductServices{
       where: {
         availableQty: { [Op.gt]: 0}
       },
-        include:{
-           attributes:['username'],
-           models:user,
-           as:"user",
-        },
+    //    include:{
+     //      attributes:['username'],
+      //     models:user,
+      //     as:"user",
+    //    },
      });
      return result;
     }catch(error){

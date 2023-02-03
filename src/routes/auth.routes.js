@@ -19,7 +19,7 @@ const router =Router();
  *             $ref: '#/components/schema/register'
  *     responses:
  *       201:
- *         description: Created
+ *         description: Create a user
  *         content:
  *  
  *           application/json:
