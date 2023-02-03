@@ -38,7 +38,7 @@ const router =Router();
  *               properties:
  *                 message:
  *                   type: string
- *                   example: product not found / something wrong /not password or email provided
+ *                   example: product not found /
  * 
  */
 
