@@ -1,0 +1,7 @@
+//
+npm init -y
+npm i express sequelize pg pg-hstore cors dotenv
+npm i nodemon morgan -D
+npm install bcrypt
+npm i jsonwebtoken
+npm install nodemailer
