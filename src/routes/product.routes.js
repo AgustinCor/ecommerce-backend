@@ -43,7 +43,7 @@ const router =Router();
  *                   example: product created
  */
 
-router.get("/get",getAllProducts);
-router.post("/create",createProduct);
+router.get("/",getAllProducts);
+router.post("/",createProduct);
 
 module.exports = router;

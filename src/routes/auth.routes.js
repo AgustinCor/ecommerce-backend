@@ -1,5 +1,6 @@
 const {Router} =require("express");
 const  {register,login}= require("../controllers/auth.controller");
+const authMiddleware = require("../middlewares/auht.middleware");
 
 const router =Router();
 
@@ -31,6 +32,8 @@ const router =Router();
  *                   example: user created
  * /api/v1/auth/login:
  *   post:
+ *     security:
+ *       - bearerAuth: []
  *     summary: Login an existing user into the app
  *     tags: [Auth]
  *     requestBody:
@@ -61,6 +64,6 @@ const router =Router();
  */
 
 router.post("/register",register);
-router.post("/login",login)
+router.post("/login",authMiddleware,login)
 
 module.exports =router;

@@ -3,7 +3,7 @@ const cors=require("cors");
 const morgan =require("morgan");
 const db=require("./utils/database");
 const routerApi = require("./routes");
-//const transporter=require("./utils/mailer");
+const transporter=require("./utils/mailer");
 
 const app =express();
 
